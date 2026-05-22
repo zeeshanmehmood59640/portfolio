@@ -13,7 +13,8 @@
       "Bash(node -e \"const l = require\\('lucide-react'\\); const keys = Object.keys\\(l\\).filter\\(k => !k.includes\\('Icon'\\) && !k.startsWith\\('Lucide'\\) && \\(k.toLowerCase\\(\\).includes\\('social'\\) || k.toLowerCase\\(\\).includes\\('brand'\\) || k.toLowerCase\\(\\).includes\\('square'\\) || k.toLowerCase\\(\\).includes\\('circle'\\)\\)\\).slice\\(0,30\\); console.log\\(keys.join\\('\\\\n'\\)\\)\")",
       "Read(//c/Users/ZeeshanM/.claude/plugins/marketplaces/ui-ux-pro-max-skill/.claude/skills/ui-ux-pro-max/**)",
       "Bash(python scripts/search.py \"developer portfolio full-stack dark modern professional\" --design-system -p \"Zeeshan Portfolio\")",
-      "Bash(dir public *)"
+      "Bash(dir public *)",
+      "Bash(npx tsc *)"
     ]
   }
 }

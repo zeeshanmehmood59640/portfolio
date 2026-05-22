@@ -43,7 +43,7 @@ export function ProjectDetail({ project, detail }: Props) {
               <h1 className="font-heading text-3xl md:text-4xl font-bold text-dark-text dark:text-[#FAF9E0] mb-3">
                 {project.title}
               </h1>
-              <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold font-heading border border-primary/30 dark:border-secondary/30 text-primary dark:text-secondary bg-primary/5 dark:bg-secondary/10">
+              <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold font-heading border border-primary/30 dark:border-white text-primary dark:text-slate-800 bg-primary/5 dark:bg-white">
                 {detail.projectType}
               </span>
             </div>
@@ -184,7 +184,7 @@ export function ProjectDetail({ project, detail }: Props) {
                 {project.tech.map((t) => (
                   <span
                     key={t}
-                    className="px-3 py-1 rounded-full text-xs font-medium border border-primary/20 dark:border-secondary/25 bg-primary/5 dark:bg-secondary/10 text-primary dark:text-secondary"
+                    className="px-3 py-1 rounded-full text-xs font-medium border border-primary/20 dark:border-white bg-primary/5 dark:bg-white text-primary dark:text-slate-800"
                   >
                     {t}
                   </span>

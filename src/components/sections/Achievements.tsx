@@ -2,8 +2,8 @@
 
 import { motion } from "framer-motion";
 import type { Variants } from "framer-motion";
-import { Trophy, CheckCircle, Award, ExternalLink } from "lucide-react";
-import { achievement, certifications } from "@/lib/content";
+import { Trophy, CheckCircle, Award, ExternalLink, Medal } from "lucide-react";
+import { achievement, entrepreneurialAward, certifications } from "@/lib/content";
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 50 },
@@ -52,7 +52,7 @@ export function Achievements() {
                     {achievement.subtitle}
                   </p>
 
-                  <ul className="space-y-2.5">
+                  <ul className="space-y-2.5 mb-5">
                     {achievement.bullets.map((b, i) => (
                       <li key={i} className="flex items-start gap-3 text-sm text-dark-header/75 dark:text-[#FAF9E0]/80">
                         <CheckCircle size={16} className="text-yellow-500 dark:text-yellow-400 mt-0.5 flex-shrink-0" />
@@ -60,6 +60,64 @@ export function Achievements() {
                       </li>
                     ))}
                   </ul>
+                  <a
+                    href={achievement.linkedinPost}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-yellow-600 dark:text-yellow-400 hover:underline"
+                  >
+                    View LinkedIn Post <ExternalLink size={14} />
+                  </a>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Entrepreneurial Award */}
+            <motion.div
+              variants={fadeUp}
+              className="relative rounded-2xl border border-orange-400/30 dark:border-orange-400/20 p-5 sm:p-8 overflow-hidden hover:shadow-[0_0_40px_rgba(251,146,60,0.12)] transition-all duration-500 bg-white/60 dark:bg-[#300b40]/15"
+            >
+              <div className="pointer-events-none absolute -top-12 -right-12 w-48 h-48 rounded-full bg-orange-400/10 blur-3xl" aria-hidden="true" />
+
+              <div className="flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-6">
+                <div className="flex-shrink-0 w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-orange-400/15 dark:bg-orange-400/10 flex items-center justify-center">
+                  <Medal size={22} className="text-orange-500 dark:text-orange-400 sm:hidden" />
+                  <Medal size={28} className="text-orange-500 dark:text-orange-400 hidden sm:block" />
+                </div>
+
+                <div className="flex-1 min-w-0">
+                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-400/15 text-orange-700 dark:text-orange-300 text-xs font-bold font-heading mb-3">
+                    <Medal size={11} /> Entrepreneurial Award
+                  </div>
+                  <h3 className="font-heading text-xl sm:text-2xl font-bold text-dark-text dark:text-[#FAF9E0] mb-1">
+                    {entrepreneurialAward.title}
+                  </h3>
+                  <p className="text-sm text-primary dark:text-secondary font-heading font-semibold mb-1">
+                    {entrepreneurialAward.subtitle}
+                  </p>
+                  <p className="text-xs text-dark-header/60 dark:text-[#FAF9E0]/60 font-heading mb-3">
+                    {entrepreneurialAward.role}
+                  </p>
+                  <p className="text-sm text-dark-header/75 dark:text-[#FAF9E0]/80 mb-4 leading-relaxed">
+                    {entrepreneurialAward.description}
+                  </p>
+
+                  <ul className="space-y-2.5 mb-5">
+                    {entrepreneurialAward.bullets.map((b, i) => (
+                      <li key={i} className="flex items-start gap-3 text-sm text-dark-header/75 dark:text-[#FAF9E0]/80">
+                        <CheckCircle size={16} className="text-orange-500 dark:text-orange-400 mt-0.5 flex-shrink-0" />
+                        <span>{b}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <a
+                    href={entrepreneurialAward.linkedinPost}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-orange-600 dark:text-orange-400 hover:underline"
+                  >
+                    View LinkedIn Post <ExternalLink size={14} />
+                  </a>
                 </div>
               </div>
             </motion.div>

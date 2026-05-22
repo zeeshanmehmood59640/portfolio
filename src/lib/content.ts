@@ -352,11 +352,27 @@ export const projects: Project[] = [
 export const achievement = {
   title: "Best Project Award — LegoLib",
   subtitle: "Ziekenhuis Geel Innovation Challenge · Thomas More University · 2025",
+  linkedinPost: "https://www.linkedin.com/posts/zeeshanmehmood-08may_project-recognition-legolib-app-proud-ugcPost-7408196710335672320-lXVc?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFCZisYB5lKjsMNSVaNrhg23cENqKfpkM5E",
   bullets: [
     "Complete feature coverage matching all defined requirements",
     "High usability validated by end users at the hospital",
     "Production-quality architecture (ASP.NET Core + Angular + Azure)",
     "Clean CI/CD pipeline and professional-grade deployment",
+  ],
+} as const;
+
+export const entrepreneurialAward = {
+  title: "3rd Place — StudentMate Pitch Competition",
+  subtitle: "Digital Startup · Thomas More University · 2025",
+  role: "Team Leader · Team of 4",
+  linkedinPost: "https://www.linkedin.com/posts/zeeshanmehmood-08may_entrepreneur-competionwinners-thomasmore-share-7272008093662642179-upd-?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFCZisYB5lKjsMNSVaNrhg23cENqKfpkM5E",
+  description:
+    "All-in-one app designed to help international students navigate life abroad — housing search, local transport, cultural integration, emergency contacts, peer networking, and sustainable living tips.",
+  bullets: [
+    "Led a 4-member team as Team Leader from concept to working prototype",
+    "Developed full Business Model Canvas, Value Proposition, and market research",
+    "Built StudentMate covering housing, transport, cultural tips, emergency contacts, and student connections",
+    "Pitched to a jury panel and secured 3rd place at the entrepreneurial pitch event",
   ],
 } as const;
 
@@ -585,6 +601,12 @@ Tech: HTML, CSS, JavaScript
 Earlier version of this portfolio built as a React SPA with hash routing. Same content and sections as the current portfolio but a different visual style. Demonstrates how Zeeshan's frontend approach has evolved — from React + Bootstrap to Next.js 15 + TypeScript + Tailwind CSS + AI chatbot.
 Live: https://zeeshanmehmood59640.github.io/Profile/
 Tech: React, JavaScript, Bootstrap, CSS, GitHub Pages
+
+---
+
+ACHIEVEMENTS:
+- 🥇 Best Project Award — LegoLib (Thomas More / Ziekenhuis Geel Innovation Challenge, 2025): Won top prize out of 10 teams for the LEGO inventory management platform built for Geel Hospital.
+- 🥉 3rd Place — StudentMate Entrepreneurial Pitch (Digital Startup course, Thomas More, 2025): Led a 4-member team as Team Leader. StudentMate is an all-in-one app for international students covering housing search, local transport, cultural integration, emergency contacts, peer networking, and sustainable living tips. Built a working prototype and presented to a jury panel.
 
 ---
 

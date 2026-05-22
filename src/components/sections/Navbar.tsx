@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Moon, Sun } from "lucide-react";
 
@@ -9,6 +9,7 @@ const navLinks = [
   { label: "Skills", href: "#skills" },
   { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
+  { label: "Achievements", href: "#achievements" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -27,16 +28,22 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  const visibleSections = useRef<Set<string>>(new Set());
+
   useEffect(() => {
     const ids = navLinks.map((l) => l.href.slice(1));
     const observer = new IntersectionObserver(
       (entries) => {
         for (const entry of entries) {
           if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-            break;
+            visibleSections.current.add(entry.target.id);
+          } else {
+            visibleSections.current.delete(entry.target.id);
           }
         }
+        // Pick the first visible section in document (navLinks) order
+        const active = ids.find((id) => visibleSections.current.has(id));
+        if (active) setActiveSection(active);
       },
       { rootMargin: "-40% 0px -55% 0px", threshold: 0 }
     );

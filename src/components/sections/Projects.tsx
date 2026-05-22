@@ -61,7 +61,7 @@ function ProjectCard({ project }: { project: Project }) {
           {project.tech.slice(0, 5).map((t) => (
             <span
               key={t}
-              className="px-2 py-0.5 rounded-md bg-primary/8 dark:bg-secondary/15 text-primary dark:text-secondary text-xs font-medium border border-primary/15 dark:border-secondary/20"
+              className="px-2 py-0.5 rounded-md bg-primary/8 dark:bg-white text-primary dark:text-slate-800 text-xs font-medium border border-primary/15 dark:border-white"
             >
               {t}
             </span>

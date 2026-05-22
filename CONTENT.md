@@ -428,6 +428,18 @@ Recognized as top solution in cohort for:
 
 ---
 
+### 🥉 3rd Place — StudentMate Entrepreneurial Pitch (Digital Startup · Thomas More · 2025)
+**Team Leader · Team of 4**
+
+StudentMate: Your all-in-one app designed to make life abroad easier for international students — housing search, local transport navigation, cultural integration, emergency contacts, peer networking, and sustainable living tips.
+
+- Led a 4-member team as Team Leader from idea to working prototype
+- Developed Business Model Canvas, Value Proposition, and full market research
+- Built and demoed a working prototype to a jury panel
+- Won 3rd place at the entrepreneurial pitch event
+
+---
+
 ### 🎓 Udemy Certificate of Completion — The Complete Web Development Bootcamp
 **Udemy · Instructor: Dr. Angela Yu**
 
