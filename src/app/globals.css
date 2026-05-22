@@ -16,6 +16,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -23,6 +24,7 @@ body {
   background-color: #ffffff;
   color: #000000;
   transition: background-color 0.3s, color 0.3s;
+  overflow-x: hidden;
 }
 
 html.dark body {

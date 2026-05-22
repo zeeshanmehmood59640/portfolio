@@ -103,7 +103,7 @@ export function Hero() {
 
             <motion.h1
               variants={fadeUp}
-              className="font-heading text-5xl md:text-7xl font-bold text-dark-text dark:text-[#FAF9E0] leading-tight tracking-tight"
+              className="font-heading text-4xl sm:text-5xl md:text-7xl font-bold text-dark-text dark:text-[#FAF9E0] leading-tight tracking-tight"
             >
               {personalInfo.name.split(" ")[0]}{" "}
               <span className="text-primary dark:text-light-header">
@@ -163,7 +163,7 @@ export function Hero() {
             {/* Stats row */}
             <motion.div
               variants={fadeUp}
-              className="mt-10 flex items-center justify-center md:justify-start"
+              className="mt-10 flex flex-wrap items-center justify-center md:justify-start gap-y-3"
             >
               {[
                 { value: "16+", label: "Projects" },

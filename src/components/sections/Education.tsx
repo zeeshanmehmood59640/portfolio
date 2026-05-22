@@ -32,13 +32,13 @@ export function Education() {
               <motion.div
                 key={i}
                 variants={fadeLeft}
-                className="flex gap-5 p-6 rounded-xl border border-[#9668C0]/20 dark:border-[#9668C0]/45 hover:shadow-[0_0_24px_rgba(150,104,192,0.22)] transition-all duration-500 bg-white/50 dark:bg-[#300b40]/20"
+                className="flex flex-col sm:flex-row gap-4 sm:gap-5 p-5 sm:p-6 rounded-xl border border-[#9668C0]/20 dark:border-[#9668C0]/45 hover:shadow-[0_0_24px_rgba(150,104,192,0.22)] transition-all duration-500 bg-white/50 dark:bg-[#300b40]/20"
               >
                 <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 dark:bg-secondary/15 flex items-center justify-center">
                   <GraduationCap size={22} className="text-primary dark:text-secondary" />
                 </div>
 
-                <div className="flex-1">
+                <div className="flex-1 min-w-0">
                   <div className="flex flex-wrap items-start justify-between gap-2 mb-1">
                     <div>
                       <h3 className="font-heading text-lg font-bold text-dark-text dark:text-[#FAF9E0]">
