@@ -1,26 +1,86 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #61008B;
+  --color-secondary: #9668C0;
+  --color-light-header: #c9afd8;
+  --color-dark-header: #300b40;
+  --color-dark-text: #0e0315;
+
+  --font-heading: var(--font-tilt-neon), sans-serif;
+  --font-body: var(--font-roboto-serif), serif;
+  --font-logo: var(--font-manufacturing-consent), system-ui;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+html.dark body {
+  background-color: #0e0315;
+  color: #FAF9E0;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #9668C0;
+  border-radius: 3px;
+}
+
+/* Selection */
+::selection {
+  background: #9668C0;
+  color: white;
+}
+
+/* Keyboard focus ring — applies only when navigating by keyboard */
+:focus-visible {
+  outline: 2px solid #61008B;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+html.dark :focus-visible {
+  outline-color: #c9afd8;
+}
+
+/* Floating symbols — pure CSS, no JS scroll tracking */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  33%       { transform: translateY(-14px) rotate(3deg); }
+  66%       { transform: translateY(8px) rotate(-2deg); }
+}
+
+.animate-float {
+  animation-name: float;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+/* Reduced motion — collapses durations for CSS animations & transitions */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

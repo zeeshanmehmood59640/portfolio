@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:21st-search-engine.fly.dev)",
+      "Bash(curl -s --ssl-no-revoke -X POST \"https://21st-search-engine.fly.dev/search\" -H \"Content-Type: application/json\" -d \"{\\\\\"query\\\\\": \\\\\"createAgentChat AgentChat createTokenHandler\\\\\"}\")",
+      "WebFetch(domain:zeeshanmehmood59640.github.io)",
+      "Bash(curl -s --ssl-no-revoke \"https://zeeshanmehmood59640.github.io/Profile/\")",
+      "Read(//c/Users/ZeeshanM/.claude/plugins/cache/ui-ux-pro-max-skill/ui-ux-pro-max/2.5.0/**)",
+      "Bash(python skills/ui-ux-pro-max/scripts/search.py \"developer portfolio personal brand dark light mode professional\" --design-system -p \"Zeeshan Portfolio\" -f markdown)",
+      "Bash(py --version)",
+      "Bash(npm run *)",
+      "Bash(node -e \"const l = require\\('lucide-react'\\); const keys = Object.keys\\(l\\).filter\\(k => k.toLowerCase\\(\\).includes\\('git'\\) || k.toLowerCase\\(\\).includes\\('link'\\)\\); console.log\\(keys.join\\('\\\\n'\\)\\)\")",
+      "Bash(node -e \"const l = require\\('lucide-react'\\); const keys = Object.keys\\(l\\).filter\\(k => !k.includes\\('Icon'\\) && !k.startsWith\\('Lucide'\\) && \\(k.toLowerCase\\(\\).includes\\('social'\\) || k.toLowerCase\\(\\).includes\\('brand'\\) || k.toLowerCase\\(\\).includes\\('square'\\) || k.toLowerCase\\(\\).includes\\('circle'\\)\\)\\).slice\\(0,30\\); console.log\\(keys.join\\('\\\\n'\\)\\)\")",
+      "Read(//c/Users/ZeeshanM/.claude/plugins/marketplaces/ui-ux-pro-max-skill/.claude/skills/ui-ux-pro-max/**)",
+      "Bash(python scripts/search.py \"developer portfolio full-stack dark modern professional\" --design-system -p \"Zeeshan Portfolio\")",
+      "Bash(dir public *)"
+    ]
+  }
+}
