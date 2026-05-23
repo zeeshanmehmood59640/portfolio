@@ -48,8 +48,11 @@ export function Achievements() {
                   <h3 className="font-heading text-xl sm:text-2xl font-bold text-dark-text dark:text-[#FAF9E0] mb-1">
                     {achievement.title}
                   </h3>
-                  <p className="text-sm text-primary dark:text-secondary font-heading font-semibold mb-4">
+                  <p className="text-sm text-primary dark:text-secondary font-heading font-semibold mb-1">
                     {achievement.subtitle}
+                  </p>
+                  <p className="text-xs text-dark-header/60 dark:text-[#FAF9E0]/60 font-heading mb-4">
+                    {achievement.role}
                   </p>
 
                   <ul className="space-y-2.5 mb-5">

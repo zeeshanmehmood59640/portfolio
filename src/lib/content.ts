@@ -202,7 +202,7 @@ export const projects: Project[] = [
     tech: ["Angular (AnalogJS)", "Nx Monorepo", ".NET 9 Web API", "Auth0", "MySQL", "EF Core", "Microsoft Azure", "GitHub Actions"],
     image: "/assets/lego.png",
     award: "🥇 Best Project Award — Thomas More / Ziekenhuis Geel Innovation Challenge",
-    myRole: "Auth0 JWT + RBAC setup · Complete admin dashboard · Backend API for borrowing workflows · CI/CD pipelines (Dev/Test/Prod)",
+    myRole: "Team Leader · Auth0 JWT + RBAC setup · Complete admin dashboard · Backend API for borrowing workflows · CI/CD pipelines (Dev/Test/Prod)",
   },
   {
     id: 5,
@@ -352,6 +352,7 @@ export const projects: Project[] = [
 export const achievement = {
   title: "Best Project Award — LegoLib",
   subtitle: "Ziekenhuis Geel Innovation Challenge · Thomas More University · 2025",
+  role: "Team Leader · Team of 3",
   linkedinPost: "https://www.linkedin.com/posts/zeeshanmehmood-08may_project-recognition-legolib-app-proud-ugcPost-7408196710335672320-lXVc?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFCZisYB5lKjsMNSVaNrhg23cENqKfpkM5E",
   bullets: [
     "Complete feature coverage matching all defined requirements",
