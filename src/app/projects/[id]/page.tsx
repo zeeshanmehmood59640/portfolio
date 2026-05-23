@@ -19,9 +19,25 @@ export async function generateMetadata({
   const { id } = await params;
   const project = projects.find((p) => p.id === Number(id));
   if (!project) return {};
+  const url = `https://zeeshanmehmood.be/projects/${id}`;
   return {
     title: `${project.title} — Zeeshan Mehmood`,
     description: project.description,
+    alternates: { canonical: url },
+    openGraph: {
+      title: `${project.title} — Zeeshan Mehmood`,
+      description: project.description,
+      url,
+      siteName: "Zeeshan Mehmood Portfolio",
+      type: "website",
+      images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${project.title} — Zeeshan Mehmood`,
+      description: project.description,
+      images: ["/og-image.png"],
+    },
   };
 }
 
