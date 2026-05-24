@@ -349,6 +349,18 @@ export const projects: Project[] = [
   },
 ];
 
+export const azureCertification = {
+  title: "Microsoft Certified: Azure Fundamentals (AZ-900)",
+  issuer: "Microsoft",
+  date: "May 2026",
+  credentialUrl: "https://learn.microsoft.com/en-us/users/zeeshanmehmood-2214/credentials/4766604CFE015585",
+  topics: [
+    "Describe cloud concepts",
+    "Describe Azure architecture and services",
+    "Describe Azure management and governance",
+  ],
+} as const;
+
 export const achievement = {
   title: "Best Project Award — LegoLib",
   subtitle: "Ziekenhuis Geel Innovation Challenge · Thomas More University · 2025",
