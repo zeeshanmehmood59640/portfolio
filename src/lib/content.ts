@@ -618,8 +618,9 @@ Tech: React, JavaScript, Bootstrap, CSS, GitHub Pages
 ---
 
 ACHIEVEMENTS:
-- 🥇 Best Project Award — LegoLib (Thomas More / Ziekenhuis Geel Innovation Challenge, 2025): Won top prize out of 10 teams for the LEGO inventory management platform built for Geel Hospital.
-- 🥉 3rd Place — StudentMate Entrepreneurial Pitch (Digital Startup course, Thomas More, 2025): Led a 4-member team as Team Leader. StudentMate is an all-in-one app for international students covering housing search, local transport, cultural integration, emergency contacts, peer networking, and sustainable living tips. Built a working prototype and presented to a jury panel.
+- 🏅 Microsoft Certified: Azure Fundamentals (AZ-900) — Passed May 2026. Official Microsoft certification covering cloud concepts, Azure architecture and services, and Azure management and governance. Credential: https://learn.microsoft.com/en-us/users/zeeshanmehmood-2214/credentials/4766604CFE015585
+- 🥇 Best Project Award — LegoLib (Thomas More / Ziekenhuis Geel Innovation Challenge, 2025): Led a team of 3 as Team Leader. Won top prize out of 10 teams for the LEGO inventory management platform built for Geel Hospital.
+- 🥉 3rd Place — StudentMate Entrepreneurial Pitch (Digital Startup course, Thomas More, 2025): Led a team of 4 as Team Leader. StudentMate is an all-in-one app for international students covering housing search, local transport, cultural integration, emergency contacts, peer networking, and sustainable living tips. Built a working prototype and presented to a jury panel.
 
 ---
 
