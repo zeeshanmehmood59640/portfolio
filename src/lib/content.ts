@@ -19,7 +19,7 @@ export const heroTypingTitles = [
 
 export const aboutBio = `I am currently studying Applied Computer Science (Software Engineering) at Thomas More Campus Geel and completed my internship at Soudal in Turnhout during my final semester. I have completed my bachelor's degree in electrical engineering from the National University of Science and Technology (NUST) in Pakistan. Due to my interest in programming, I decided to pursue a career in computer science and software development.
 
-I have worked as a front-end web developer for more than two years in a software company and as a freelancer. I like to explore new places and also to grow my skills by working on personal projects.
+I have worked as a front-end web developer for more than one year in a software company. I like to explore new places and also to grow my skills by working on personal projects.
 
 After completing my graduation, my primary goal is to gain hands-on experience, deepen my technical expertise, and understand large-scale software development practices. Over the years, as I grow professionally, I aspire to launch my own software company — creating impactful solutions and contributing to the tech ecosystem.`;
 
@@ -448,7 +448,7 @@ PERSONAL INFO:
 - Available for: junior full-stack or .NET developer roles in Belgium
 
 BIO:
-Zeeshan is currently studying Applied Computer Science (Software Engineering) at Thomas More Campus Geel and completed his internship at Soudal NV in Turnhout during his final semester. He holds a bachelor's degree in Electrical Engineering from NUST (National University of Science and Technology) in Pakistan. He has worked as a front-end web developer for more than two years — both full-time at Vital Web Solution and as a freelancer. His primary goal after graduating is to gain hands-on experience, deepen his technical expertise, and understand large-scale software development. Long-term, he aspires to launch his own software company.
+Zeeshan is currently studying Applied Computer Science (Software Engineering) at Thomas More Campus Geel and completed his internship at Soudal NV in Turnhout during his final semester. He holds a bachelor's degree in Electrical Engineering from NUST (National University of Science and Technology) in Pakistan. He has worked as a front-end web developer for more than one year —  full-time at Vital Web Solutions. His primary goal after graduating is to gain hands-on experience, deepen his technical expertise, and understand large-scale software development. Long-term, he aspires to launch his own software company.
 
 ---
 
