@@ -193,16 +193,17 @@ export function Hero() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
           >
-            <div className="relative w-64 h-64 md:w-80 md:h-80">
+            <div className="relative w-64 h-64 md:w-[300px] md:h-[300px]">
               <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary to-secondary opacity-20 blur-2xl scale-110" />
               <div className="relative w-full h-full rounded-full border-2 border-primary/30 dark:border-light-header/30 overflow-hidden bg-[#300b40]/10">
                 <Image
-                  src="/assets/shan.jpg"
+                  src="/assets/img.jpg"
                   alt="Zeeshan Mehmood — Full-Stack Developer"
                   fill
                   className="object-cover"
                   priority
-                  sizes="(max-width: 768px) 256px, 320px"
+                  quality={95}
+                  sizes="(max-width: 768px) 256px, 300px"
                 />
               </div>
             </div>

@@ -76,7 +76,7 @@ export function Contact() {
             <motion.div variants={fadeUp} className="space-y-6">
               <a
                 href={`mailto:${personalInfo.email}`}
-                className="flex items-center gap-4 p-5 rounded-xl border border-[#9668C0]/20 dark:border-[#9668C0]/45 hover:shadow-[0_0_24px_rgba(150,104,192,0.22)] hover:-translate-y-1 transition-all duration-300 group bg-white/50 dark:bg-[#300b40]/20 overflow-hidden"
+                className="flex items-center gap-4 p-2 sm:p-5 rounded-xl border border-[#9668C0]/20 dark:border-[#9668C0]/45 hover:shadow-[0_0_24px_rgba(150,104,192,0.22)] hover:-translate-y-1 transition-all duration-300 group bg-white/50 dark:bg-[#300b40]/20 overflow-hidden"
                 aria-label={`Email ${personalInfo.email}`}
               >
                 <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 dark:bg-secondary/15 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
@@ -92,7 +92,7 @@ export function Contact() {
                 href={personalInfo.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-4 p-5 rounded-xl border border-[#9668C0]/20 dark:border-[#9668C0]/45 hover:shadow-[0_0_24px_rgba(150,104,192,0.22)] hover:-translate-y-1 transition-all duration-300 group bg-white/50 dark:bg-[#300b40]/20 overflow-hidden"
+                className="flex items-center gap-4 p-2 sm:p-5 rounded-xl border border-[#9668C0]/20 dark:border-[#9668C0]/45 hover:shadow-[0_0_24px_rgba(150,104,192,0.22)] hover:-translate-y-1 transition-all duration-300 group bg-white/50 dark:bg-[#300b40]/20 overflow-hidden"
                 aria-label="Zeeshan's LinkedIn profile"
               >
                 <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 dark:bg-secondary/15 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
@@ -108,7 +108,7 @@ export function Contact() {
                 href={personalInfo.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-4 p-5 rounded-xl border border-[#9668C0]/20 dark:border-[#9668C0]/45 hover:shadow-[0_0_24px_rgba(150,104,192,0.22)] hover:-translate-y-1 transition-all duration-300 group bg-white/50 dark:bg-[#300b40]/20 overflow-hidden"
+                className="flex items-center gap-4 p-2 sm:p-5 rounded-xl border border-[#9668C0]/20 dark:border-[#9668C0]/45 hover:shadow-[0_0_24px_rgba(150,104,192,0.22)] hover:-translate-y-1 transition-all duration-300 group bg-white/50 dark:bg-[#300b40]/20 overflow-hidden"
                 aria-label="Zeeshan's GitHub profile"
               >
                 <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 dark:bg-secondary/15 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
