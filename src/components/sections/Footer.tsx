@@ -53,7 +53,7 @@ export function Footer() {
         </div>
 
         <p className="text-xs text-dark-header/40 dark:text-[#FAF9E0]/50 text-center">
-          © {new Date().getFullYear()} {personalInfo.name} · Built with Next.js & Tailwind CSS
+          © 2026 {personalInfo.name}
         </p>
       </div>
     </footer>
