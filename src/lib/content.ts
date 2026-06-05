@@ -21,10 +21,13 @@ export const aboutBio = `I am currently studying Applied Computer Science (Softw
 
 I have worked as a front-end web developer for more than one year in a software company. I like to explore new places and also to grow my skills by working on personal projects.
 
-After completing my graduation, my primary goal is to gain hands-on experience, deepen my technical expertise, and understand large-scale software development practices. Over the years, as I grow professionally, I aspire to launch my own software company — creating impactful solutions and contributing to the tech ecosystem.`;
+After completing my graduation, my primary goal is to gain hands-on experience, deepen my technical expertise, and understand large-scale software development practices. Over the years, as I grow professionally, I aspire to launch my own software company — creating impactful solutions and contributing to the tech ecosystem.
 
-export const languages = ["English (fluent)", "Nederlands (B1, improving)", "Urdu (native)"] as const;
+Beyond technical skills, I am a strong communicator and team player. Through team projects, freelance client work, and my part-time job at McDonald's, I have developed solid interpersonal skills, a sharp eye for detail, leadership under pressure, and the ability to manage time effectively across multiple responsibilities.`;
+
+export const languages = ["English (fluent)", "Dutch (B1, improving)", "Urdu (native)"] as const;
 export const hobbies = ["Tourism", "Reading Books"] as const;
+export const softSkills = ["Problem Solving", "Teamwork", "Communication", "Leadership", "Time Management", "Eye for Detail", "Adaptability", "Critical Thinking"] as const;
 
 export const services = [
   {
@@ -159,6 +162,18 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: 4,
+    title: "LegoLib",
+    category: "semester",
+    context: "Team Project (Software Engineering) · Client: Ziekenhuis Geel",
+    description: "Full-stack LEGO inventory management platform for hospitalized children at Geel Hospital. Tracks borrowing, room delivery, return status, and inventory.",
+    features: ["LEGO browsing & borrowing for children", "Staff dashboard for requests/deliveries", "Room tracking", "Admin panel (sets + user management)", "RBAC (Admin, SubAdmin, Staff)", "Real-time inventory", "Borrowing statistics"],
+    tech: ["Angular", "Nx Monorepo", ".NET 9 Web API", "Auth0", "MySQL", "EF Core", "Microsoft Azure", "GitHub Actions"],
+    image: "/assets/lego.png",
+    award: "🥇 Best Project Award — Thomas More / Ziekenhuis Geel Innovation Challenge",
+    myRole: "Team Leader · Auth0 JWT + RBAC setup · Complete admin dashboard · Backend API for borrowing workflows · CI/CD pipelines (Dev/Test/Prod)",
+  },
+  {
     id: 1,
     title: "Visit Request Portal",
     category: "semester",
@@ -191,18 +206,6 @@ export const projects: Project[] = [
     image: "/assets/cloud.png",
     video: "https://youtu.be/Rvpcf5vcA-8",
     myRole: "Designed /ask endpoint · Built database schema · Developed orchestration for async AI jobs · Created Integration Management Portal",
-  },
-  {
-    id: 4,
-    title: "LegoLib",
-    category: "semester",
-    context: "Team Project (Software Engineering) · Client: Ziekenhuis Geel",
-    description: "Full-stack LEGO inventory management platform for hospitalized children at Geel Hospital. Tracks borrowing, room delivery, return status, and inventory.",
-    features: ["LEGO browsing & borrowing for children", "Staff dashboard for requests/deliveries", "Room tracking", "Admin panel (sets + user management)", "RBAC (Admin, SubAdmin, Staff)", "Real-time inventory", "Borrowing statistics"],
-    tech: ["Angular (AnalogJS)", "Nx Monorepo", ".NET 9 Web API", "Auth0", "MySQL", "EF Core", "Microsoft Azure", "GitHub Actions"],
-    image: "/assets/lego.png",
-    award: "🥇 Best Project Award — Thomas More / Ziekenhuis Geel Innovation Challenge",
-    myRole: "Team Leader · Auth0 JWT + RBAC setup · Complete admin dashboard · Backend API for borrowing workflows · CI/CD pipelines (Dev/Test/Prod)",
   },
   {
     id: 5,
@@ -443,7 +446,7 @@ PERSONAL INFO:
 - Email: zeeshanmehmood59640@gmail.com
 - LinkedIn: https://linkedin.com/in/zeeshanmehmood-08may
 - GitHub: https://github.com/zeeshanmehmood59640
-- Languages: English (fluent), Nederlands (B1, improving), Urdu (native)
+- Languages: English (fluent), Dutch (B1, improving), Urdu (native)
 - Hobbies: Tourism, Reading Books
 - Available for: junior full-stack or .NET developer roles in Belgium
 
@@ -540,7 +543,7 @@ Tech: NestJS, Prisma ORM, MySQL, React, TypeScript, Tailwind CSS, AWS ECS Fargat
 4. LegoLib — AWARD WINNING PROJECT (Team Project — Software Engineering, Client: Ziekenhuis Geel)
 🥇 Winner of the Best Project Award at Thomas More / Ziekenhuis Geel Innovation Challenge (out of 10 teams). Full-stack LEGO inventory management platform for hospitalized children at Geel Hospital. Children can browse and borrow LEGO sets; staff manage deliveries and returns; admins manage inventory, users, and statistics.
 Zeeshan's role: Auth0 JWT authentication + RBAC setup (Admin/SubAdmin/Staff roles), complete Admin dashboard (CRUD for sets, user management, stats), backend API for borrowing workflows, CI/CD pipelines in Azure for Dev/Test/Prod.
-Tech: Angular (AnalogJS), Nx Monorepo, .NET 9 Web API, Auth0 (JWT + RBAC), MySQL, EF Core, Microsoft Azure, GitHub Actions CI/CD
+Tech: Angular, Nx Monorepo, .NET 9 Web API, Auth0 (JWT + RBAC), MySQL, EF Core, Microsoft Azure, GitHub Actions CI/CD
 
 5. EduQuest (Team Project — Skills Integration Lab 2)
 Training session management platform for Thomas More students. Students join teams, select/propose assignment topics, upload documents for coaches/clients. Coaches and clients have dedicated portals.

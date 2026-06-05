@@ -168,8 +168,8 @@ export function Hero() {
               {[
                 { value: "16+", label: "Projects" },
                 { value: "1+", label: "Years Exp." },
-                { value: "# 2", label: "Award Winner" },
-                { value: "# 2", label: "Certification" },
+                { value: "2", label: "Awards Won" },
+                { value: "2", label: "Certifications" },
               ].map(({ value, label }, i) => (
                 <div
                   key={label}

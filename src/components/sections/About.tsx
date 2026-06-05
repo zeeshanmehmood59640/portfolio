@@ -2,8 +2,8 @@
 
 import { motion } from "framer-motion";
 import type { Variants } from "framer-motion";
-import { BookOpen, Globe, Heart } from "lucide-react";
-import { aboutBio, languages, hobbies } from "@/lib/content";
+import { BookOpen, Globe, Heart, Users } from "lucide-react";
+import { aboutBio, languages, hobbies, softSkills } from "@/lib/content";
 
 const fadeLeft: Variants = {
   hidden: { opacity: 0, x: -50 },
@@ -34,57 +34,75 @@ export function About() {
             <div className="mt-3 w-16 border-2 border-primary dark:border-secondary" />
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-10 items-start">
-            {/* Bio */}
-            <motion.div variants={fadeLeft} className="md:col-span-2 space-y-4">
-              {paragraphs.map((p, i) => (
-                <p key={i} className="text-dark-header/80 dark:text-[#FAF9E0]/85 leading-relaxed text-base">
-                  {p}
-                </p>
-              ))}
-            </motion.div>
+          {/* Bio — all paragraphs */}
+          <motion.div variants={fadeLeft} className="space-y-4 mb-10">
+            {paragraphs.map((p, i) => (
+              <p key={i} className="text-dark-header/80 dark:text-[#FAF9E0]/85 leading-relaxed text-base">
+                {p}
+              </p>
+            ))}
+          </motion.div>
 
-            {/* Info cards */}
-            <motion.div variants={fadeRight} className="space-y-4">
-              <div className="rounded-xl border border-[#9668C0]/20 dark:border-[#9668C0]/30 p-5 hover:shadow-[0_0_20px_rgba(97,0,139,0.15)] transition-all duration-500">
-                <div className="flex items-center gap-2 mb-3">
-                  <Globe size={18} className="text-primary dark:text-secondary" />
-                  <h3 className="font-heading font-semibold text-dark-header dark:text-[#FAF9E0]">Languages</h3>
-                </div>
-                <ul className="space-y-1">
-                  {languages.map((lang) => (
-                    <li key={lang} className="text-sm text-dark-header/70 dark:text-[#FAF9E0]/80">
-                      {lang}
-                    </li>
-                  ))}
-                </ul>
+          {/* Info cards — horizontal row */}
+          <motion.div
+            variants={fadeRight}
+            className="grid grid-cols-2 lg:grid-cols-4 gap-4"
+          >
+            <div className="rounded-xl border border-[#9668C0]/20 dark:border-[#9668C0]/30 p-5 hover:shadow-[0_0_20px_rgba(97,0,139,0.15)] transition-all duration-500">
+              <div className="flex items-center gap-2 mb-3">
+                <Globe size={18} className="text-primary dark:text-secondary" />
+                <h3 className="font-heading font-semibold text-dark-header dark:text-[#FAF9E0]">Languages</h3>
               </div>
+              <ul className="space-y-1">
+                {languages.map((lang) => (
+                  <li key={lang} className="text-sm text-dark-header/70 dark:text-[#FAF9E0]/80">
+                    {lang}
+                  </li>
+                ))}
+              </ul>
+            </div>
 
-              <div className="rounded-xl border border-[#9668C0]/20 dark:border-[#9668C0]/30 p-5 hover:shadow-[0_0_20px_rgba(97,0,139,0.15)] transition-all duration-500">
-                <div className="flex items-center gap-2 mb-3">
-                  <Heart size={18} className="text-primary dark:text-secondary" />
-                  <h3 className="font-heading font-semibold text-dark-header dark:text-[#FAF9E0]">Hobbies</h3>
-                </div>
-                <ul className="space-y-1">
-                  {hobbies.map((h) => (
-                    <li key={h} className="text-sm text-dark-header/70 dark:text-[#FAF9E0]/80">
-                      {h}
-                    </li>
-                  ))}
-                </ul>
+            <div className="rounded-xl border border-[#9668C0]/20 dark:border-[#9668C0]/30 p-5 hover:shadow-[0_0_20px_rgba(97,0,139,0.15)] transition-all duration-500">
+              <div className="flex items-center gap-2 mb-3">
+                <Heart size={18} className="text-primary dark:text-secondary" />
+                <h3 className="font-heading font-semibold text-dark-header dark:text-[#FAF9E0]">Hobbies</h3>
               </div>
+              <ul className="space-y-1">
+                {hobbies.map((h) => (
+                  <li key={h} className="text-sm text-dark-header/70 dark:text-[#FAF9E0]/80">
+                    {h}
+                  </li>
+                ))}
+              </ul>
+            </div>
 
-              <div className="rounded-xl border border-[#9668C0]/20 dark:border-[#9668C0]/30 p-5 hover:shadow-[0_0_20px_rgba(97,0,139,0.15)] transition-all duration-500">
-                <div className="flex items-center gap-2 mb-3">
-                  <BookOpen size={18} className="text-primary dark:text-secondary" />
-                  <h3 className="font-heading font-semibold text-dark-header dark:text-[#FAF9E0]">Status</h3>
-                </div>
-                <p className="text-sm text-dark-header/70 dark:text-[#FAF9E0]/80">
-                  Graduating June 2026 · Open to junior developer roles in Belgium
-                </p>
+            <div className="rounded-xl border border-[#9668C0]/20 dark:border-[#9668C0]/30 p-5 hover:shadow-[0_0_20px_rgba(97,0,139,0.15)] transition-all duration-500">
+              <div className="flex items-center gap-2 mb-3">
+                <Users size={18} className="text-primary dark:text-secondary" />
+                <h3 className="font-heading font-semibold text-dark-header dark:text-[#FAF9E0]">Soft Skills</h3>
               </div>
-            </motion.div>
-          </div>
+              <div className="flex flex-wrap gap-1.5">
+                {softSkills.map((skill) => (
+                  <span
+                    key={skill}
+                    className="px-2 py-0.5 rounded-full bg-primary/8 dark:bg-[#9668C0]/15 text-primary dark:text-[#c9afd8] text-xs border border-primary/15 dark:border-[#9668C0]/25"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="rounded-xl border border-[#9668C0]/20 dark:border-[#9668C0]/30 p-5 hover:shadow-[0_0_20px_rgba(97,0,139,0.15)] transition-all duration-500">
+              <div className="flex items-center gap-2 mb-3">
+                <BookOpen size={18} className="text-primary dark:text-secondary" />
+                <h3 className="font-heading font-semibold text-dark-header dark:text-[#FAF9E0]">Status</h3>
+              </div>
+              <p className="text-sm text-dark-header/70 dark:text-[#FAF9E0]/80">
+                Graduating June 2026 · Open to junior developer roles in Belgium
+              </p>
+            </div>
+          </motion.div>
         </motion.div>
       </div>
     </section>
