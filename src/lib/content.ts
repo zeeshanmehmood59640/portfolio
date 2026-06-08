@@ -106,7 +106,7 @@ export const experiences: Experience[] = [
     title: "App Developer Intern",
     company: "Soudal NV",
     location: "Turnhout, Belgium",
-    period: "Feb 2026 – May 2026",
+    period: "13 weeks (Feb 2026 – May 2026)",
     type: "Internship",
     bullets: [
       "Shipped a Visit Request Portal to production serving 4 user roles (Employees, Admins, Managers, Operations) — ASP.NET Core Razor Pages, C#, EF Core, SQL Server. Met 100% of stakeholder requirements at final acceptance.",
@@ -468,8 +468,8 @@ EDUCATION:
 
 WORK EXPERIENCE:
 
-## App Developer Intern — Soudal NV, Turnhout, Belgium (Feb 2026 – May 2026)
-Zeeshan completed a full internship at Soudal NV (a global sealants & adhesives manufacturer). He independently developed and shipped two web applications:
+## App Developer Intern — Soudal NV, Turnhout, Belgium (13 weeks: 22 Feb 2026 – 22 May 2026)
+Zeeshan completed a 13-week internship at Soudal NV (a global sealants & adhesives manufacturer). He independently developed and shipped two web applications:
 
 ### Project 1: Visit Request Portal (Main Internship Project)
 An enterprise internal tool for managing visitor scheduling at the Soudal Turnhout campus. Previously, visitor planning was done via informal emails and personal calendars — no visibility, no tracking. Zeeshan built a structured digital workflow from scratch.
