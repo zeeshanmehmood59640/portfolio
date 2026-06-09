@@ -21,7 +21,7 @@ export const aboutBio = `I am currently studying Applied Computer Science (Softw
 
 I have worked as a front-end web developer for more than one year in a software company. I like to explore new places and also to grow my skills by working on personal projects.
 
-After completing my graduation, my primary goal is to gain hands-on experience, deepen my technical expertise, and understand large-scale software development practices. Over the years, as I grow professionally, I aspire to launch my own software company — creating impactful solutions and contributing to the tech ecosystem.
+After completing my graduation, my primary goal is to gain hands-on experience, deepen my technical expertise, and understand large-scale software development practices. Over the years, as I grow professionally, I aspire to create impactful solutions and contributing to the tech ecosystem.
 
 Beyond technical skills, I am a strong communicator and team player. Through team projects, freelance client work, and my part-time job at McDonald's, I have developed solid interpersonal skills, a sharp eye for detail, leadership under pressure, and the ability to manage time effectively across multiple responsibilities.`;
 
