@@ -97,7 +97,7 @@ export function Navbar() {
             onClick={(e) => handleNavClick(e, "#hero")}
             whileHover={{ scale: 1.02, y: -1 }}
             whileTap={{ scale: 0.98 }}
-            className="font-logo text-3xl leading-none cursor-pointer"
+            className="font-heading text-3xl leading-none cursor-pointer"
             aria-label="Back to top"
           >
             {[
