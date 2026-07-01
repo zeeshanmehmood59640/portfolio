@@ -93,13 +93,20 @@ export function About() {
               </div>
             </div>
 
-            <div className="rounded-xl border border-[#9668C0]/20 dark:border-[#9668C0]/30 p-5 hover:shadow-[0_0_20px_rgba(97,0,139,0.15)] transition-all duration-500">
+            <div className="rounded-xl border border-green-500/30 dark:border-green-500/25 p-5 hover:shadow-[0_0_20px_rgba(34,197,94,0.15)] transition-all duration-500">
               <div className="flex items-center gap-2 mb-3">
-                <BookOpen size={18} className="text-primary dark:text-secondary" />
+                <BookOpen size={18} className="text-green-600 dark:text-green-400" />
                 <h3 className="font-heading font-semibold text-dark-header dark:text-[#FAF9E0]">Status</h3>
               </div>
+              <div className="flex items-center gap-2 mb-2">
+                <span className="relative flex h-2.5 w-2.5">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75" />
+                  <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500" />
+                </span>
+                <span className="text-sm font-semibold text-green-600 dark:text-green-400 font-heading">Open to Work</span>
+              </div>
               <p className="text-sm text-dark-header/70 dark:text-[#FAF9E0]/80">
-                Graduating June 2026 · Open to junior developer roles in Belgium
+                Graduated June 2026 · Seeking App Developer roles in Belgium
               </p>
             </div>
           </motion.div>

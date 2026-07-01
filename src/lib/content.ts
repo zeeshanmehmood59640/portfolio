@@ -17,13 +17,13 @@ export const heroTypingTitles = [
   "Problem Solver",
 ] as const;
 
-export const aboutBio = `I am currently studying Applied Computer Science (Software Engineering) at Thomas More Campus Geel and completed my internship at Soudal in Turnhout during my final semester. I have completed my bachelor's degree in electrical engineering from the National University of Science and Technology (NUST) in Pakistan. Due to my interest in programming, I decided to pursue a career in computer science and software development.
+export const aboutBio = `I recently graduated Magna Cum Laude from Applied Computer Science at Thomas More University of Applied Sciences in Geel — awarded Best Student of my department at the graduation ceremony. I also hold a bachelor's degree in Electrical Engineering from NUST in Pakistan. My passion for programming led me to make the switch into software development, and I have not looked back since.
 
-I have worked as a front-end web developer for more than one year in a software company. I like to explore new places and also to grow my skills by working on personal projects.
+During my studies I completed a 13-week internship at Soudal NV in Turnhout, where I independently built and shipped two enterprise web applications to production. Before that I worked as a front-end web developer for over one year — full-time at Vital Web Solution in Pakistan and as a freelancer for clients in Belgium and abroad.
 
-After completing my graduation, my primary goal is to gain hands-on experience, deepen my technical expertise, and understand large-scale software development practices. Over the years, as I grow professionally, I aspire to create impactful solutions and contributing to the tech ecosystem.
+I am now actively open to work as an App Developer. My goal is to join a team where I can contribute from day one, deepen my expertise in full-stack and cloud development, and keep growing as a professional.
 
-Beyond technical skills, I am a strong communicator and team player. Through team projects, freelance client work, and my part-time job at McDonald's, I have developed solid interpersonal skills, a sharp eye for detail, leadership under pressure, and the ability to manage time effectively across multiple responsibilities.`;
+Beyond technical skills, I am a strong communicator and reliable team player. Through university projects, freelance client work, and part-time work at McDonald's, I have developed solid interpersonal skills, a sharp eye for detail, and the ability to stay dependable under pressure.`;
 
 export const languages = ["English (fluent)", "Dutch (B1, improving)", "Urdu (native)"] as const;
 export const hobbies = ["Tourism", "Reading Books"] as const;
@@ -352,6 +352,19 @@ export const projects: Project[] = [
   },
 ];
 
+export const bestStudentAward = {
+  title: "Best Student Award — Applied Computer Science",
+  subtitle: "Thomas More University of Applied Sciences · Graduation Ceremony · July 2026",
+  role: "1st Position in Class · Applied Computer Science Department · Presented by Tunity",
+  photo: "/assets/best-student-award.jpeg",
+  bullets: [
+    "First position in class — highest grades across all courses in the Applied Computer Science programme",
+    "Awarded at the official graduation ceremony, presented by Tunity",
+    "Recognized for consistent academic excellence throughout the full bachelor programme",
+    "Graduated Magna Cum Laude (Great Distinction)",
+  ],
+} as const;
+
 export const azureCertification = {
   title: "Microsoft Certified: Azure Fundamentals (AZ-900)",
   issuer: "Microsoft",
@@ -408,7 +421,8 @@ export const education = [
     institution: "Thomas More University of Applied Sciences",
     location: "Geel, Belgium",
     period: "Feb 2023 – June 2026",
-    grade: "A",
+    grade: "Magna Cum Laude",
+    bestStudent: true,
   },
   {
     degree: "Bachelor — Electrical Engineering",
@@ -417,6 +431,7 @@ export const education = [
     location: "Islamabad, Pakistan",
     period: "Sep 2013 – May 2017",
     grade: undefined,
+    bestStudent: false,
   },
 ] as const;
 
@@ -448,17 +463,17 @@ PERSONAL INFO:
 - GitHub: https://github.com/zeeshanmehmood59640
 - Languages: English (fluent), Dutch (B1, improving), Urdu (native)
 - Hobbies: Tourism, Reading Books
-- Available for: junior full-stack or .NET developer roles in Belgium
+- Available for: App Developer roles in Belgium · actively open to work
 
 BIO:
-Zeeshan is currently studying Applied Computer Science (Software Engineering) at Thomas More Campus Geel and completed his internship at Soudal NV in Turnhout during his final semester. He holds a bachelor's degree in Electrical Engineering from NUST (National University of Science and Technology) in Pakistan. He has worked as a front-end web developer for more than one year —  full-time at Vital Web Solutions. His primary goal after graduating is to gain hands-on experience, deepen his technical expertise, and understand large-scale software development. Long-term, he aspires to launch his own software company.
+Zeeshan recently graduated Magna Cum Laude from Applied Computer Science (Software Engineering) at Thomas More University of Applied Sciences in Geel, where he was awarded Best Student of his department. He also holds a bachelor's degree in Electrical Engineering from NUST in Pakistan. During his studies he completed a 13-week internship at Soudal NV in Turnhout, independently building and shipping two enterprise web applications to production. He is now actively open to work as an App Developer, looking to join a team where he can contribute from day one and keep growing his skills. Long-term, he aspires to launch his own software company.
 
 ---
 
 EDUCATION:
 1. Professional Bachelor — Applied Computer Science (Software Engineering)
    Thomas More University of Applied Sciences, Geel, Belgium
-   Feb 2023 – June 2026 · Grade: A
+   Feb 2023 – June 2026 · Magna Cum Laude (Great Distinction) · Best Student Award
 
 2. Bachelor — Electrical Engineering (Telecommunications & Radars)
    National University of Science and Technology (NUST), Islamabad, Pakistan
@@ -621,6 +636,7 @@ Tech: React, JavaScript, Bootstrap, CSS, GitHub Pages
 ---
 
 ACHIEVEMENTS:
+- 🎓 Best Student Award — Applied Computer Science (Thomas More University, Graduation Ceremony, July 2026): Awarded Best Student of the Applied Computer Science department, presented by Tunity. Achieved first position in class with the highest grades across all courses in the programme. Graduated Magna Cum Laude (Great Distinction).
 - 🏅 Microsoft Certified: Azure Fundamentals (AZ-900) — Passed May 2026. Official Microsoft certification covering cloud concepts, Azure architecture and services, and Azure management and governance. Credential: https://learn.microsoft.com/en-us/users/zeeshanmehmood-2214/credentials/4766604CFE015585
 - 🥇 Best Project Award — LegoLib (Thomas More / Ziekenhuis Geel Innovation Challenge, 2025): Led a team of 3 as Team Leader. Won top prize out of 10 teams for the LEGO inventory management platform built for Geel Hospital.
 - 🥉 3rd Place — StudentMate Entrepreneurial Pitch (Digital Startup course, Thomas More, 2025): Led a team of 4 as Team Leader. StudentMate is an all-in-one app for international students covering housing search, local transport, cultural integration, emergency contacts, peer networking, and sustainable living tips. Built a working prototype and presented to a jury panel.

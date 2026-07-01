@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: "Zeeshan Mehmood — Full-Stack Developer | .NET & Azure | Belgium",
   description:
-    "Junior Full-Stack Developer based in Geel, Belgium. 16 projects across .NET, Azure, React, Angular, Laravel, AI/ML. Thomas More graduate June 2026. Open to junior developer roles in Belgium.",
+    "Junior Full-Stack Developer based in Geel, Belgium. Best Student Award recipient, Thomas More 2026. 16 projects across .NET, Azure, React, Angular, Laravel, AI/ML. Open to junior developer roles in Belgium.",
   keywords: [
     "Zeeshan Mehmood",
     "Full-Stack Developer Belgium",

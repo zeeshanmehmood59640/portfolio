@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import type { Variants } from "framer-motion";
-import { GraduationCap, MapPin, Calendar } from "lucide-react";
+import { GraduationCap, MapPin, Calendar, Star } from "lucide-react";
 import { education } from "@/lib/content";
 
 const fadeLeft: Variants = {
@@ -48,11 +48,18 @@ export function Education() {
                         {edu.specialization}
                       </p>
                     </div>
-                    {edu.grade && (
-                      <span className="px-3 py-1 rounded-full bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 text-xs font-bold font-heading">
-                        Grade: {edu.grade}
-                      </span>
-                    )}
+                    <div className="flex flex-wrap gap-2">
+                      {edu.grade && (
+                        <span className="px-3 py-1 rounded-full bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 text-xs font-bold font-heading">
+                          Grade: {edu.grade}
+                        </span>
+                      )}
+                      {edu.bestStudent && (
+                        <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400 text-xs font-bold font-heading">
+                          <Star size={11} className="fill-current" /> Best Student
+                        </span>
+                      )}
+                    </div>
                   </div>
 
                   <p className="font-semibold text-dark-header dark:text-[#FAF9E0]/85 text-sm mt-1">

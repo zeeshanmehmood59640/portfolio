@@ -343,7 +343,7 @@ export function InternshipContent() {
             After delivering the main project ahead of schedule, I was given the
             opportunity to build an additional MVP: the{" "}
             <strong>R&D Formulation Database</strong>, a centralized system for
-            Soudal's Research & Development department to manage chemical
+            Soudal&apos;s Research &amp; Development department to manage chemical
             formulation records. This replaced fragmented spreadsheet-based
             tracking with a structured, permission-controlled application
             featuring a multi-step creation wizard, automatic weight

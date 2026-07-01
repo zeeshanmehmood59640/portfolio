@@ -82,11 +82,11 @@ Support both **dark and light mode** with a toggle (persist preference in localS
 ## About Section
 
 ### Bio
-I am currently studying Applied Computer Science (Software Engineering) at Thomas More Campus Geel and completed my internship at Soudal in Turnhout during my final semester. I have completed my bachelor's degree in electrical engineering from the National University of Science and Technology (NUST) in Pakistan. Due to my interest in programming, I decided to pursue a career in computer science and software development.
+I recently graduated Magna Cum Laude from Applied Computer Science (Software Engineering) at Thomas More University of Applied Sciences in Geel — awarded Best Student of my department at the graduation ceremony. I also hold a bachelor's degree in Electrical Engineering from NUST in Pakistan. My passion for programming led me to make the switch into software development, and I have not looked back since.
 
-I have worked as a front-end web developer for more than two years in a software company and as a freelancer. I like to explore new places and also to grow my skills by working on personal projects.
+During my studies I completed a 13-week internship at Soudal NV in Turnhout, where I independently built and shipped two enterprise web applications to production. Before that I worked as a front-end web developer for over two years — full-time at Vital Web Solution in Pakistan and as a freelancer for clients in Belgium and abroad.
 
-After completing my graduation, my primary goal is to gain hands-on experience, deepen my technical expertise, and understand large-scale software development practices. Over the years, as I grow professionally, I aspire to launch my own software company — creating impactful solutions and contributing to the tech ecosystem.
+I am now actively open to work as an App Developer. My goal is to join a team where I can contribute from day one, deepen my expertise in full-stack and cloud development, and keep growing as a professional. Long-term, I aspire to build impactful software and eventually launch my own company.
 
 **Languages:** English (fluent) · Nederlands (B1, improving) · Urdu (native)
 **Hobbies:** Tourism · Reading Books
@@ -416,6 +416,18 @@ Two-player dice game built with vanilla JavaScript.
 ---
 
 ## Achievements
+
+### 🎓 Best Student Award — Applied Computer Science (Graduation Ceremony)
+**Thomas More University of Applied Sciences · July 2026 · Presented by Tunity**
+
+Awarded Best Student of the Applied Computer Science department at the graduation ceremony. Recognized for:
+- First position in class — highest grades across all courses in the Applied Computer Science programme
+- Consistent academic excellence throughout the full bachelor programme
+- Graduated Magna Cum Laude (Great Distinction)
+
+**Photo:** /assets/best-student-award.jpeg
+
+---
 
 ### 🥇 Best Project Award — LegoLib (Ziekenhuis Geel Innovation Challenge)
 **Thomas More University · 2025**

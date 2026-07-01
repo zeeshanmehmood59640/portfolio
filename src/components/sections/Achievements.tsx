@@ -1,9 +1,11 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import type { Variants } from "framer-motion";
-import { Trophy, CheckCircle, Award, ExternalLink, Medal, BadgeCheck } from "lucide-react";
-import { achievement, entrepreneurialAward, certifications, azureCertification } from "@/lib/content";
+import { Trophy, CheckCircle, Award, ExternalLink, Medal, BadgeCheck, GraduationCap, X, ZoomIn } from "lucide-react";
+import Image from "next/image";
+import { achievement, entrepreneurialAward, certifications, azureCertification, bestStudentAward } from "@/lib/content";
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 50 },
@@ -11,6 +13,15 @@ const fadeUp: Variants = {
 };
 
 export function Achievements() {
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+
+  useEffect(() => {
+    if (!lightboxOpen) return;
+    const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") setLightboxOpen(false); };
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [lightboxOpen]);
+
   return (
     <section id="achievements" className="py-24 px-6">
       <div className="max-w-6xl mx-auto">
@@ -28,6 +39,96 @@ export function Achievements() {
           </motion.div>
 
           <div className="flex flex-col gap-6">
+            {/* Best Student Award */}
+            <motion.div
+              variants={fadeUp}
+              className="relative rounded-2xl border border-green-400/30 dark:border-green-400/20 p-5 sm:p-8 overflow-hidden hover:shadow-[0_0_40px_rgba(34,197,94,0.12)] transition-all duration-500 bg-white/60 dark:bg-[#300b40]/15"
+            >
+              <div className="pointer-events-none absolute -top-12 -right-12 w-48 h-48 rounded-full bg-green-400/10 blur-3xl" aria-hidden="true" />
+
+              {/* 50/50: text left, photo right */}
+              <div className="flex flex-col md:flex-row gap-6 md:gap-8">
+                {/* Left — text */}
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-green-400/15 dark:bg-green-400/10 flex items-center justify-center">
+                      <GraduationCap size={24} className="text-green-600 dark:text-green-400" />
+                    </div>
+                    <div>
+                      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-400/15 text-green-700 dark:text-green-300 text-xs font-bold font-heading mb-2">
+                        <GraduationCap size={11} /> Best Student Award
+                      </div>
+                      <h3 className="font-heading text-xl sm:text-2xl font-bold text-dark-text dark:text-[#FAF9E0]">
+                        {bestStudentAward.title}
+                      </h3>
+                    </div>
+                  </div>
+                  <p className="text-sm text-primary dark:text-secondary font-heading font-semibold mb-1">
+                    {bestStudentAward.subtitle}
+                  </p>
+                  <p className="text-xs text-dark-header/60 dark:text-[#FAF9E0]/60 font-heading mb-4">
+                    {bestStudentAward.role}
+                  </p>
+                  <ul className="space-y-2.5">
+                    {bestStudentAward.bullets.map((b, i) => (
+                      <li key={i} className="flex items-start gap-3 text-sm text-dark-header/75 dark:text-[#FAF9E0]/80">
+                        <CheckCircle size={16} className="text-green-600 dark:text-green-400 mt-0.5 flex-shrink-0" />
+                        <span>{b}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Right — photo (click to open lightbox) */}
+                <button
+                  onClick={() => setLightboxOpen(true)}
+                  aria-label="View full award photo"
+                  className="flex-1 group relative min-h-[260px] rounded-xl overflow-hidden border border-green-400/20 dark:border-green-400/15 cursor-zoom-in"
+                >
+                  <Image
+                    src={bestStudentAward.photo}
+                    alt="Zeeshan Mehmood receiving the Best Student Award at Thomas More graduation ceremony"
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-colors duration-300 flex items-center justify-center">
+                    <ZoomIn size={36} className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-lg" />
+                  </div>
+                </button>
+
+                {/* Lightbox */}
+                {lightboxOpen && (
+                  <div
+                    className="fixed inset-0 z-50 flex items-center justify-center bg-black/85 backdrop-blur-sm p-4"
+                    onClick={() => setLightboxOpen(false)}
+                  >
+                    <button
+                      onClick={() => setLightboxOpen(false)}
+                      aria-label="Close photo"
+                      className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors"
+                    >
+                      <X size={20} />
+                    </button>
+                    <div
+                      className="relative max-w-4xl w-full max-h-[90vh] rounded-2xl overflow-hidden shadow-2xl"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <Image
+                        src={bestStudentAward.photo}
+                        alt="Zeeshan Mehmood receiving the Best Student Award at Thomas More graduation ceremony"
+                        width={1200}
+                        height={900}
+                        className="object-contain w-full h-full max-h-[90vh]"
+                        priority
+                      />
+                    </div>
+                  </div>
+                )}
+
+              </div>
+            </motion.div>
+
             {/* Azure AZ-900 Certification */}
             <motion.div
               variants={fadeUp}
