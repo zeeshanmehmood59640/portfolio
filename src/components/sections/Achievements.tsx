@@ -28,7 +28,7 @@ export function Achievements() {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.1 }}
           variants={{ visible: { transition: { staggerChildren: 0.15 } } }}
         >
           <motion.div variants={fadeUp} className="mb-12">
@@ -106,7 +106,7 @@ export function Achievements() {
                     <button
                       onClick={() => setLightboxOpen(false)}
                       aria-label="Close photo"
-                      className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors"
+                      className="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors"
                     >
                       <X size={20} />
                     </button>

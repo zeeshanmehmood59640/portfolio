@@ -14,7 +14,9 @@
       "Read(//c/Users/ZeeshanM/.claude/plugins/marketplaces/ui-ux-pro-max-skill/.claude/skills/ui-ux-pro-max/**)",
       "Bash(python scripts/search.py \"developer portfolio full-stack dark modern professional\" --design-system -p \"Zeeshan Portfolio\")",
       "Bash(dir public *)",
-      "Bash(npx tsc *)"
+      "Bash(npx tsc *)",
+      "PowerShell(npm run typecheck)",
+      "PowerShell(npm run lint)"
     ]
   }
 }
