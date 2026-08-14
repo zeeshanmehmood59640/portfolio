@@ -132,10 +132,10 @@ export const experiences: Experience[] = [
     title: "Web Developer",
     company: "Vital Web Solution",
     location: "Islamabad, Pakistan",
-    period: "Jan 2021 – Feb 2023",
+    period: "Jan 2022 – Jan 2023",
     type: "Full-time",
     bullets: [
-      "Delivered 10+ client WordPress sites, converting Figma designs to production with 90%+ visual fidelity.",
+      "Delivered 30+ client WordPress sites, converting Figma designs to production with 90%+ visual fidelity.",
       "Customized themes and plugins (PHP); owned cross-browser compatibility and performance.",
       "Worked directly with designers and clients to translate requirements into shipped features.",
     ],
