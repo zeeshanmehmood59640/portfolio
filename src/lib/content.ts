@@ -117,17 +117,7 @@ export const experiences: Experience[] = [
     ],
     tech: "ASP.NET Core 8 · C# · EF Core · SQL Server · SignalR · Azure · Bicep · Azure DevOps · Microsoft Entra ID · Microsoft Graph API",
   },
-    {
-    title: "Student Crew Member",
-    company: "McDonald's Geel",
-    location: "Geel, Belgium",
-    period: "Mar 2023 – Present",
-    type: "Part-time",
-    bullets: [
-      "Trained and guided 10+ new team members on kitchen workflows and service standards.",
-      "Regularly called in for peak shifts — recognized for speed, consistency, and reliability.",
-    ],
-  },
+    
   {
     title: "Web Developer",
     company: "Vital Web Solution",
